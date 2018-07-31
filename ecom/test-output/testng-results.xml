@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-07-31T06:27:16Z" name="Suite" finished-at="2018-07-31T06:27:46Z" duration-ms="30073">
+  <suite started-at="2018-07-31T21:14:18Z" name="Suite" finished-at="2018-07-31T21:14:34Z" duration-ms="15695">
     <groups>
     </groups>
-    <test started-at="2018-07-31T06:27:16Z" name="Test" finished-at="2018-07-31T06:27:46Z" duration-ms="30073">
+    <test started-at="2018-07-31T21:14:18Z" name="Test" finished-at="2018-07-31T21:14:34Z" duration-ms="15695">
       <class name="com.horizonhobby.ecom.TestProductSearch">
-        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.horizonhobby.ecom.TestProductSearch@61d6015a]" started-at="2018-07-31T06:27:16Z" name="SetUp" finished-at="2018-07-31T06:27:31Z" duration-ms="14364" status="PASS">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.horizonhobby.ecom.TestProductSearch@61d6015a]" started-at="2018-07-31T21:14:18Z" name="SetUp" finished-at="2018-07-31T21:14:29Z" duration-ms="10691" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SetUp -->
-        <test-method signature="Search()[pri:0, instance:com.horizonhobby.ecom.TestProductSearch@61d6015a]" started-at="2018-07-31T06:27:31Z" name="Search" finished-at="2018-07-31T06:27:45Z" duration-ms="14170" status="PASS">
+        <test-method signature="Search()[pri:0, instance:com.horizonhobby.ecom.TestProductSearch@61d6015a]" started-at="2018-07-31T21:14:29Z" name="Search" finished-at="2018-07-31T21:14:33Z" duration-ms="3761" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Search -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.horizonhobby.ecom.TestProductSearch@61d6015a]" started-at="2018-07-31T06:27:45Z" name="TearDown" finished-at="2018-07-31T06:27:46Z" duration-ms="1503" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:com.horizonhobby.ecom.TestProductSearch@61d6015a]" started-at="2018-07-31T21:14:33Z" name="TearDown" finished-at="2018-07-31T21:14:34Z" duration-ms="1215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->

@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -42,18 +43,19 @@ public class TestProductSearch {
 		String filePath = prop.getProperty("ReportFilePath");
 		System.out.println("Report file name is :" + filePath);
 		report = new ExtentReports(filePath, false);
-		test = report.startTest("Verify HHWorkflow");
+		test = report.startTest("Verify TestProductSearch");
 
-		test.log(LogStatus.FAIL, test.getTest().getName().toString());
+		test.log(LogStatus.INFO, test.getTest().getName().toString());
 		System.out.println("Project name is :" + test.getTest().getName());
 
 		browser = prop.getProperty("Browser");
 		url = prop.getProperty("HOST");
 		browserDriverPath = prop.getProperty("DriverPath");
-
+		ChromeOptions co = new ChromeOptions();
+		
 		System.setProperty("webdriver.chrome.driver", browserDriverPath);
-		driver = new ChromeDriver();
-		test.log(LogStatus.INFO, "Browser Launched");
+		driver = new ChromeDriver(co);
+		test.log(LogStatus.INFO, "Browser Launched"+browser);
 		driver.get(url);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -74,7 +76,12 @@ public class TestProductSearch {
 		;
 		driver.findElement(By.id("search_submit")).click();
 
-		sa.assertEquals(driver.getTitle(),
-				"Blade Night 230 S BNF Basic Flybarless Collective Pitch RC Helicopter with SAFE Technology | Horizon Hobby");
+		sa.assertEquals(driver.getTitle(),"Blade Night 230 S BNF Basic Flybarless Collective Pitch RC Helicopter with SAFE Technology | Horizon Hobby");
+				System.out.println("Product page opened is :- "+driver.getTitle());
+		if(driver.getTitle()!="Blade Night 230 S BNF Basic Flybarless Collective Pitch RC Helicopter with SAFE Technology | Horizon Hobby"){
+			test.log(LogStatus.FAIL, "Wrong page opened");
+		}else {
+			test.log(LogStatus.PASS, "Correct product page opened");
+		}
 	}
 }
