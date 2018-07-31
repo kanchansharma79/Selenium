@@ -28,27 +28,31 @@ import utils.Screenshots;
 public class LoginFeatureTest {
 
 	WebDriver driver;
-	String envFile;
+	SoftAssert sa;
+	
 	Properties prop;
 	ExtentReports report;
 	ExtentTest test;
+	
+	String envFile;
 	String browser;
 	String url;
 	String browserDriverPath;
-	SoftAssert sa = new SoftAssert();
-
+	
+	
 	@BeforeClass
 	public void Setup() throws Exception {
 		envFile = System.getProperty("user.dir") + "/resources/env.properties";
 		sa = new SoftAssert();
-		FileInputStream fis = new FileInputStream(envFile);
 		prop = new Properties();
+		
+		FileInputStream fis = new FileInputStream(envFile);
 		prop.load(fis);
+		
 		System.out.println("Report file name is :" + prop.getProperty("ReportFilePath"));
-
 		report = new ExtentReports(prop.getProperty("ReportFilePath"), false);
 		test = report.startTest("Verify login datadriven");
-		System.out.println("Project name is :" + report.getProjectName());
+		test.log(LogStatus.INFO, test.getTest().getName());
 		System.out.println("Project name is :" + test.getTest().getName());
 
 		browser = prop.getProperty("Browser");

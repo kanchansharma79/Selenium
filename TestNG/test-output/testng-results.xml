@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-07-30T00:59:54Z" name="Default suite" finished-at="2018-07-30T01:00:38Z" duration-ms="44152">
+  <suite started-at="2018-07-31T05:17:29Z" name="Default suite" finished-at="2018-07-31T05:18:18Z" duration-ms="49061">
     <groups>
     </groups>
-    <test started-at="2018-07-30T00:59:54Z" name="Default test" finished-at="2018-07-30T01:00:38Z" duration-ms="44152">
+    <test started-at="2018-07-31T05:17:29Z" name="Default test" finished-at="2018-07-31T05:18:18Z" duration-ms="49061">
       <class name="testclasses.LoginFeatureTest">
-        <test-method is-config="true" signature="Setup()[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-30T00:59:54Z" name="Setup" finished-at="2018-07-30T01:00:10Z" duration-ms="16187" status="PASS">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-31T05:17:29Z" name="Setup" finished-at="2018-07-31T05:17:49Z" duration-ms="19304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Setup -->
-        <test-method signature="LoginDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-30T01:00:10Z" name="LoginDataProvider" data-provider="excelCredential" finished-at="2018-07-30T01:00:18Z" duration-ms="7823" status="FAIL">
+        <test-method signature="LoginDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-31T05:17:49Z" name="LoginDataProvider" data-provider="excelCredential" finished-at="2018-07-31T05:17:57Z" duration-ms="8684" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -68,7 +68,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDataProvider -->
-        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-30T01:00:18Z" name="TearDownMethod" finished-at="2018-07-30T01:00:19Z" duration-ms="761" status="PASS">
+        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-31T05:17:57Z" name="TearDownMethod" finished-at="2018-07-31T05:17:58Z" duration-ms="1133" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,7 +79,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownMethod -->
-        <test-method signature="LoginDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-30T01:00:19Z" name="LoginDataProvider" data-provider="excelCredential" finished-at="2018-07-30T01:00:26Z" duration-ms="7536" status="FAIL">
+        <test-method signature="LoginDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-31T05:17:58Z" name="LoginDataProvider" data-provider="excelCredential" finished-at="2018-07-31T05:18:07Z" duration-ms="8885" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -136,7 +136,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDataProvider -->
-        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-30T01:00:26Z" name="TearDownMethod" finished-at="2018-07-30T01:00:27Z" duration-ms="380" status="PASS">
+        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-31T05:18:07Z" name="TearDownMethod" finished-at="2018-07-31T05:18:08Z" duration-ms="447" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -147,7 +147,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownMethod -->
-        <test-method signature="LoginDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-30T01:00:27Z" name="LoginDataProvider" data-provider="excelCredential" finished-at="2018-07-30T01:00:37Z" duration-ms="10344" status="PASS">
+        <test-method signature="LoginDataProvider(java.lang.String, java.lang.String)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-31T05:18:08Z" name="LoginDataProvider" data-provider="excelCredential" finished-at="2018-07-31T05:18:17Z" duration-ms="9580" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -163,7 +163,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginDataProvider -->
-        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-30T01:00:37Z" name="TearDownMethod" finished-at="2018-07-30T01:00:37Z" duration-ms="73" status="PASS">
+        <test-method is-config="true" signature="TearDownMethod(org.testng.ITestResult)[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-31T05:18:17Z" name="TearDownMethod" finished-at="2018-07-31T05:18:18Z" duration-ms="159" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -174,7 +174,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDownMethod -->
-        <test-method is-config="true" signature="TearDown()[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-30T01:00:37Z" name="TearDown" finished-at="2018-07-30T01:00:38Z" duration-ms="986" status="PASS">
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:testclasses.LoginFeatureTest@37883b97]" started-at="2018-07-31T05:18:18Z" name="TearDown" finished-at="2018-07-31T05:18:18Z" duration-ms="785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TearDown -->
